@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>triolan_uniform_spring</title>
+	<link rel="stylesheet" href="t_u_s.css">
+	<script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+	<script src="t_u_s.js"></script>
+</head>
+<body>
+	<header class="page-header">
+		данная страница предназначена для сбора информации по наличию элементов формы и возможных ее предпочтениях
+	</header>
+	<main>
+		<div>
+			<form id="first" class="one thing" action="/echo" method="post">
+				<div class="container1">
+					<div class="thing cap">
+					</div>
+					
+					<label for="cap"><span class="s1">Сделайте выбор о состоянии вещи</span></label>
+					<select name="days" multiple size=4 id="cap">
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="rad1">
+						 <span class="s1">Выберите один из вариантов</span> </br></br>
+						<input type="radio" name="question-one" value="d10" checked> красный цвет, белый логотип</br>
+						<input type="radio" name="question-one" value="d11"> белый цвет, красный логотип</br>
+						<input type="radio" name="question-one" value="d12"> черный цвет, белый логотип</br>
+						<input type="radio" name="question-one" value="d13"> черный цвет, красный логотип</br>
+					</div>
+					
+					<div class="comment1">
+						<span class="s2">Если не устроил не один</br> из предложенных вариантов,</br> напишите собственный </br></span>
+						<textarea name="comment" id="comment-field" rows=4 ></textarea>
+					</div>
+					
+					<input class="hid" value="Отправить" type="submit">
+					
+				</div>
+			</form>
+			
+			<form class="one thing" action="/echo" method="post">
+				<div class="container2">
+				
+					<div class="thing pants">
+					</div>
+					
+					<label for="pants"><span class="s1">Сделайте выбор о состоянии вещи</span></label>
+					<select name="days" multiple size=4 id="pants">
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="check2">
+						<span class="s1">Выберите один из вариантов</span> </br></br>
+						<input name="pants1" id="subscribe-field" type="checkbox" checked> брюки</br>
+						<input name="pants2" id="subscribe-field" type="checkbox"> комбинезон</br>
+					</div>
+					
+					<div class="rad2">
+						<span class="s1">Выберите один из вариантов </span></br></br>
+						<input type="radio" name="question-one" value="d20" checked> серый цвет (стандартный формат)</br>
+						<input type="radio" name="question-one" value="d21"> черный цвет (стандартный формат)</br>
+						<input type="radio" name="question-one" value="d22"> серый цвет (джинсовый формат)</br>
+						<input type="radio" name="question-one" value="d23"> черный цвет (джинсовый формат)</br>
+						<input type="radio" name="question-one" value="d24"> синий цвет (джинсовый формат)</br>
+					</div>
+					
+					<div class="comment2">
+						<span class="s2">Если не устроил не один</br> из предложенных вариантов,</br> напишите собственный </br></span>
+						<textarea name="comment" id="comment-field" rows=4 ></textarea>
+					</div>
+					
+					<input class="hid" value="Отправить" type="submit">
+					
+				</div>	
+			</form>
+			
+			<form class="one thing" action="/echo" method="post">
+			
+				<div class="container3">
+				
+					<div class="thing T-shirt-red " >
+					</div>
+					
+					<label for="t1"><span class="s1">Сделайте выбор о состоянии вещи</span></label>
+					<select name="days1" multiple size=4 id="t1">
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="thing T-shirt-red-white">
+					</div>
+					
+					<select class="sel1" name="days" multiple size=4>
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="thing T-shirt-white">
+					</div>
+					
+					<label for="t3"></label>
+					<select class="sel2" name="days" multiple size=4 id="t3">
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="thing T-shirt-white-red">
+					</div>
+					
+					<label for="t4"></label>
+					<select name="days2" multiple size=4 id="t4">
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="check3">
+						<span class="s1">Выберите два варианта</span> </br></br>
+						<input name="T-shirt1" id="subscribe-field" type="checkbox" checked> красный цвет, белый логотип</br>
+						<input name="T-shirt2" id="subscribe-field" type="checkbox"> красный цвет, черный логотип</br>
+						<input name="T-shirt3" id="subscribe-field" type="checkbox"> черный цвет, белый логотип</br>
+						<input name="T-shirt4" id="subscribe-field" type="checkbox"> черный цвет, красный логотип</br><input name="T-shirt5" id="subscribe-field" type="checkbox"> белый цвет, красный логотип</br>	
+						<input name="subscribe" id="subscribe-field" type="checkbox"> белый цвет, черный логотип</br>
+					</div>
+					
+					<div class="rad3">
+						</br></br></br></br>
+						<span class="s1">Выберите один из вариантов </br></br></span>
+						<input type="radio" name="question-one" value="d30" checked> с воротником</br>
+						<input type="radio" name="question-one" value="d31"> без воротника </br>
+					</div>										
+					
+					<div class="comment3">
+						<span class="s2">Если не устроил не один</br> из предложенных вариантов,</br> напишите собственный </br></span>
+						<textarea name="comment" id="comment-field" rows=4 ></textarea>
+					</div>
+					
+					<input class="hid" value="Отправить" type="submit">
+					
+				</div>	
+			</form>
+			
+			<form onsubmit="alert('данные отправлены')" class="one thing" action="/echo" method="post">
+			
+				<div class="container4">
+				
+					<div class="thing vest_1" >
+					</div>
+					
+					<label for="v"><span class="s1">Сделайте выбор о состоянии вещи</span></label>
+					<select name="days1" multiple size=4 id="v">
+						<option selected>отсутствует</option>
+						<option>плохое</option>
+						<option>удовлетворительное</option>
+						<option>хорошое</option>
+					</select>
+					
+					<div class="rad4">
+						<span class="s1">Выберите один из вариантов </span></br></br>
+						<input type="radio" name="question-one" value="d40" checked> красный цвет, белый логотип </br>
+						<input type="radio" name="question-one" value="d41"> красный цвет, черный логотип </br>
+						<input type="radio" name="question-one" value="d42"> черный цвет, белый логотип </br>
+						<input type="radio" name="question-one" value="d43"> черный цвет, красный логотип </br>
+					</div>
+					
+					<div class="check4">
+						<span class="s1">Выберите нужные варианты </span> </br></br>
+						<input name="vest1" id="subscribe-field" type="checkbox"> нужен капюшон </br>
+						<input name="vest2" id="subscribe-field" type="checkbox"> нужны карманы только на змейке </br>
+						<input name="vest3" id="subscribe-field" type="checkbox"> нужны карманы только на липучке </br>
+						<input name="vest4" id="subscribe-field" type="checkbox"> нужны карманы только на кнопках </br><input name="vest5" id="subscribe-field" type="checkbox"> нужны карманы на змейке и липучке</br>	
+						<input name="vest6" id="subscribe-field" type="checkbox"> нужны карманы на змейке и кнопках </br>
+						<input name="vest7" id="subscribe-field" type="checkbox"> нужны карманы на змейке, липучке и кнопках </br>
+						<input name="vest8" id="subscribe-field" type="checkbox"> лывый вариант жилетки предпочтительнее </br>
+						<input name="vest9" id="subscribe-field" type="checkbox"> правый вариант жилетки предпочтительнее </br>
+					</div>
+					
+					<div class="comment4">
+						<span class="s2">Если не устроил не один</br> из предложенных вариантов,</br> напишите собственный </br></span>
+						<textarea name="comment" id="comment-field" rows=4 ></textarea>
+					</div>
+					
+					<div class="thing vest_2" >
+					</div>
+										
+					<input class="hid" value="Отправить" type="submit">
+					
+				</div>
+			</form>
+		</div>
+		
+		<button class="endB" onclick="allClick()">Нажмите для отправки данных</button>		
+				
+	</main>
+	<footer class="page-footer">				
+	</footer>
+			
+	</body>
+</html>
